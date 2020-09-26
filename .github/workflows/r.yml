@@ -19,7 +19,10 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        r-version: [4.0.2, 'devel']
+        config:
+          - {os: windows-latest, r: '4.0.2'}
+          - {os: macOS-latest, r: '4.0.2'}
+          - {os: macOS-latest, r: 'devel'}          
 
     steps:
       - uses: actions/checkout@v2
