@@ -1,1 +1,2 @@
 export("kitten.fake.fun")
+export(gcall)
